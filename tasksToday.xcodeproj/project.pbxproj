@@ -22,7 +22,6 @@
 		D8208CD51952F75100A0FA03 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8208CB71952F75100A0FA03 /* UIKit.framework */; };
 		D8208CDD1952F75100A0FA03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8208CDB1952F75100A0FA03 /* InfoPlist.strings */; };
 		D8208CE91952F77900A0FA03 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8208CE81952F77900A0FA03 /* EventKit.framework */; };
-		D892175C1952FC9800FF6E4A /* FISEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D892175B1952FC9800FF6E4A /* FISEventsViewController.m */; };
 		D892175E1952FFC600FF6E4A /* viewSpecsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D892175D1952FFC600FF6E4A /* viewSpecsSpec.m */; };
 		D892175F1953042800FF6E4A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8208CE81952F77900A0FA03 /* EventKit.framework */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,6 @@
 		D8208CDA1952F75100A0FA03 /* tasksTodayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tasksTodayTests-Info.plist"; sourceTree = "<group>"; };
 		D8208CDC1952F75100A0FA03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8208CE81952F77900A0FA03 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		D892175A1952FC9800FF6E4A /* FISEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISEventsViewController.h; sourceTree = "<group>"; };
-		D892175B1952FC9800FF6E4A /* FISEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISEventsViewController.m; sourceTree = "<group>"; };
 		D892175D1952FFC600FF6E4A /* viewSpecsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewSpecsSpec.m; sourceTree = "<group>"; };
 		D96E84F6F1B54C40A5C0A6D0 /* Pods-tasksTodayTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tasksTodayTests.xcconfig"; path = "Pods/Pods-tasksTodayTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +127,6 @@
 				D8208CC21952F75100A0FA03 /* FISAppDelegate.h */,
 				D8208CC31952F75100A0FA03 /* FISAppDelegate.m */,
 				D8208CC51952F75100A0FA03 /* Main.storyboard */,
-				D892175A1952FC9800FF6E4A /* FISEventsViewController.h */,
-				D892175B1952FC9800FF6E4A /* FISEventsViewController.m */,
 				D8208CC81952F75100A0FA03 /* FISViewController.h */,
 				D8208CC91952F75100A0FA03 /* FISViewController.m */,
 				D8208CCB1952F75100A0FA03 /* Images.xcassets */,
@@ -304,7 +299,6 @@
 			files = (
 				D8208CCA1952F75100A0FA03 /* FISViewController.m in Sources */,
 				D8208CC01952F75100A0FA03 /* main.m in Sources */,
-				D892175C1952FC9800FF6E4A /* FISEventsViewController.m in Sources */,
 				D8208CC41952F75100A0FA03 /* FISAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
