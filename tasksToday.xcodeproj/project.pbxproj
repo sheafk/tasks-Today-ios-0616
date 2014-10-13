@@ -39,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		254A474813AE4959A6146617 /* libPods-tasksTodayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tasksTodayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30DC76044E17B53B9A71E8C4 /* Pods-tasksTodayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tasksTodayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tasksTodayTests/Pods-tasksTodayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D8208CB01952F75100A0FA03 /* tasksToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tasksToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8208CB31952F75100A0FA03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8208CB51952F75100A0FA03 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +62,7 @@
 		D892175A1952FC9800FF6E4A /* FISEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISEventsViewController.h; sourceTree = "<group>"; };
 		D892175B1952FC9800FF6E4A /* FISEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISEventsViewController.m; sourceTree = "<group>"; };
 		D892175D1952FFC600FF6E4A /* viewSpecsSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = viewSpecsSpec.m; sourceTree = "<group>"; };
-		D96E84F6F1B54C40A5C0A6D0 /* Pods-tasksTodayTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tasksTodayTests.xcconfig"; path = "Pods/Pods-tasksTodayTests.xcconfig"; sourceTree = "<group>"; };
+		EE8E35BCBB51893A45B71EC4 /* Pods-tasksTodayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tasksTodayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tasksTodayTests/Pods-tasksTodayTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD22003E7D6F026EB0F1F8FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30DC76044E17B53B9A71E8C4 /* Pods-tasksTodayTests.debug.xcconfig */,
+				EE8E35BCBB51893A45B71EC4 /* Pods-tasksTodayTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D8208CA71952F75100A0FA03 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +108,7 @@
 				D8208CD81952F75100A0FA03 /* tasksTodayTests */,
 				D8208CB21952F75100A0FA03 /* Frameworks */,
 				D8208CB11952F75100A0FA03 /* Products */,
-				D96E84F6F1B54C40A5C0A6D0 /* Pods-tasksTodayTests.xcconfig */,
+				BD22003E7D6F026EB0F1F8FD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-tasksTodayTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tasksTodayTests/Pods-tasksTodayTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,7 +463,7 @@
 		};
 		D8208CE61952F75100A0FA03 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D96E84F6F1B54C40A5C0A6D0 /* Pods-tasksTodayTests.xcconfig */;
+			baseConfigurationReference = 30DC76044E17B53B9A71E8C4 /* Pods-tasksTodayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tasksToday.app/tasksToday";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -476,7 +486,7 @@
 		};
 		D8208CE71952F75100A0FA03 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D96E84F6F1B54C40A5C0A6D0 /* Pods-tasksTodayTests.xcconfig */;
+			baseConfigurationReference = EE8E35BCBB51893A45B71EC4 /* Pods-tasksTodayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tasksToday.app/tasksToday";
 				FRAMEWORK_SEARCH_PATHS = (
