@@ -52,10 +52,10 @@
             </objects>
             <point key="canvasLocation" x="778" y="83"/>
         </scene>
-        <!--Events View Controller-->
+        <!--View Controller-->
         <scene sceneID="npS-XR-zte">
             <objects>
-                <viewController id="08q-Pe-HTm" customClass="FISEventsViewController" sceneMemberID="viewController">
+                <viewController id="08q-Pe-HTm" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sly-me-kIz"/>
                         <viewControllerLayoutGuide type="bottom" id="BwX-3J-MgW"/>
@@ -80,9 +80,6 @@
                         </accessibility>
                     </view>
                     <navigationItem key="navigationItem" id="jML-hK-JxE"/>
-                    <connections>
-                        <outlet property="textView" destination="MJ7-Oe-1dd" id="0fq-HG-8Qr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNZ-sn-vCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
