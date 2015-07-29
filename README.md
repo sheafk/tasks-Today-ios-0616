@@ -1,7 +1,4 @@
----
-tags: navigation, calendar, views, segue
-language: objc
----
+
 # Tasks Today
 
 Create a viewer for your tasks last year or this upcoming year.
