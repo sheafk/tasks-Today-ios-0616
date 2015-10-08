@@ -18,19 +18,23 @@
 SpecBegin(viewSpecs)
 
 describe(@"viewSpecs", ^{
+    __block Swizzlean *swizzler;
+    __block Swizzlean *swizzler2;
     
     beforeAll(^{
-        Swizzlean *swizzler = [[Swizzlean alloc] initWithClassToSwizzle:[FISViewController class]];
+        swizzler = [[Swizzlean alloc] initWithClassToSwizzle:[FISViewController class]];
 
         // When getNextYearsEvents is called, just return one event with title "testing"
         [swizzler swizzleInstanceMethod:@selector(getNextYearsEvents) withReplacementImplementation:^(id _self){
+            NSLog(@"Boop");
             EKEventStore *story = [[EKEventStore alloc] init];
             EKEvent *event = [EKEvent eventWithEventStore:story];
             event.title = @"testing";
 
             return @[event];
         }];
-        Swizzlean *swizzler2 = [[Swizzlean alloc] initWithClassToSwizzle:[FISViewController class]];
+        
+        swizzler2 = [[Swizzlean alloc] initWithClassToSwizzle:[FISViewController class]];
 
         // When getLastYearsEvents is called, just return two events
         [swizzler2 swizzleInstanceMethod:@selector(getLastYearsEvents) withReplacementImplementation:^(id _self){
@@ -43,7 +47,8 @@ describe(@"viewSpecs", ^{
 
             return @[event,event2];
         }];
-
+        
+        
     });
     
 
