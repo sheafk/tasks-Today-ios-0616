@@ -30,7 +30,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void)requestCalendarPermission
 {
     EKEventStore *store = [[EKEventStore alloc] init];
