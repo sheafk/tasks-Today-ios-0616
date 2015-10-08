@@ -29,7 +29,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSArray *)getNextYearsEvents {
+    return @[];
+}
 
+- (NSArray *)getLastYearsEvents {
+    return @[];
+}
+
+- (void)requestCalendarPermission {
+    
+}
 
 
 @end

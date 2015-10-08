@@ -3,9 +3,9 @@
 
 Create a viewer for your tasks last year or this upcoming year.
 
-  1. Check out the `.xcworkspace` file. Views are set up.
-  2. Create a new class for the event detail view. Connect it up
-  3. Now we need to write three methods to get calendar details from the phone. This is hard to do...in this repo [I've included the answer](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/encrypted_calendar_access.txt) for the three methods declared in the `.h` file if you'd like to use them. Please please please feel free to use them. Its a lot of documentation reading and learning how to access the phone calendar through EventKit is not the point of this lab. **If you want a challenge, write those methods without my solution. Remember, you don't need to understand everything going on, just make it work**
+  1. Open the `tasksToday.xcworkspace` file. The views are already set up for you.
+  2. Create a new class for the event detail view controller. Connect its views to the class file.
+  3. Now we need to write three methods to get calendar details from the phone. This is hard to do...in this repo [we've included the answer](http://ironboard-curriculum-content.s3.amazonaws.com/iOS/encrypted_calendar_access.txt) for the three methods declared in the `.h` file if you'd like to use them. Please, please, please feel free to use them. It's a lot of documentation reading and learning how to access the phone calendar through EventKit and this is not the point of this lab. **If you want a challenge, write those methods without my solution. Remember, you don't need to understand everything going on, just make it work**
   4. Before doing anything you need to call the `requestCalendarPermission` method.
   5. Each method returns events from the respective time period. They are an array of [EKEvent](https://developer.apple.com/library/ios/documentation/EventKit/Reference/EKEventClassRef/Reference/Reference.html) objects. Most importantly they have a `title` property that has the name of the event.
   6. When you click on the each button, do the appropriate thing by passing the correct array of events to the `destinationViewController`
