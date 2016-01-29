@@ -26,4 +26,4 @@ Create a viewer for your tasks last year or this upcoming year.
 
   * Instead of Buttons, play with two `UIDatePicker` views and display any arbitrary start and end date events.
 
-<a href='https://learn.co/lessons/tasks-Today' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/tasks-Today' title='Tasks Today'>Tasks Today</a> on Learn.co and start learning to code for free.</p>
